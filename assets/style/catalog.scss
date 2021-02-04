@@ -1,0 +1,23 @@
+.categories-section {
+    .categories-section-container {
+        .category-items {
+            .category-item {
+                padding: 8px 15px;
+                margin: 5px 6px;
+                border-radius: 15px;
+                background-color: #f5f5f5;
+                cursor: pointer;
+                span {
+                    font-size: 11px;
+                    line-height: 1.30;
+                    letter-spacing: -0.04px;
+                    text-align: center;
+                    color: #2a2929;
+                }
+                &.active {
+    
+                }
+            }
+        }
+    }
+}
