@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,OAAO,CAAC;EACJ,OAAO,EAAE,IAAI;CAChB;;AAED,AAAA,OAAO,CAAC;EACJ,SAAS,EAAE,IAAI;CAClB;;AAED,AAAA,UAAU,CAAC;EACP,SAAS,EAAE,MAAM;CACpB;;AAED,AAAA,MAAM,CAAC;EACH,cAAc,EAAE,GAAG;CACtB;;AAED,AAAA,aAAa,CAAC;EACV,cAAc,EAAE,WAAW;CAC9B;;AAED,AAAA,YAAY,CAAC;EACT,cAAc,EAAE,MAAM;CACzB;;AAED,AAAA,gBAAgB,CAAC;EACb,cAAc,EAAE,cAAc;CACjC;;AAED,AAAA,aAAa,CAAC;EACV,eAAe,EAAE,UAAU;CAC9B;;AAED,AAAA,WAAW,CAAC;EACR,eAAe,EAAE,QAAQ;CAC5B;;AAED,AAAA,cAAc,CAAC;EACX,eAAe,EAAE,MAAM;CAC1B;;AAED,AAAA,eAAe,CAAC;EACZ,eAAe,EAAE,aAAa;CACjC;;AAED,AAAA,cAAc,CAAC;EACX,eAAe,EAAE,YAAY;CAChC;;AAED,AAAA,eAAe,CAAC;EACZ,WAAW,EAAE,UAAU;CAC1B;;AAED,AAAA,aAAa,CAAC;EACV,WAAW,EAAE,QAAQ;CACxB;;AAED,AAAA,gBAAgB,CAAC;EACb,WAAW,EAAE,MAAM;CACtB;;ADrDD,AAAA,MAAM,CAAC;EACH,gBAAgB,EAAE,GAAG;CACxB",
+    "sources": [
+        "style.scss",
+        "assets/style/flexbox.scss",
+        "assets/style/global.scss",
+        "assets/style/mixins.scss",
+        "assets/style/variables.scss",
+        "assets/style/variables.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
