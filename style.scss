@@ -1,20 +1,83 @@
-@import './assets/style/flexbox.scss';
-@import './assets/style/global.scss';
-@import './assets/style/mixins.scss';
-@import './assets/style/normalize.scss';
+@import "./assets/style/flexbox.scss";
+@import "./assets/style/global.scss";
+@import "./assets/style/mixins.scss";
+@import "./assets/style/normalize.scss";
+
+// HEADER-STYLE-START
 
 header {
-    .header-cnt {
+    .header-container {
         padding: 32px 0;
-        .menu-items {
-            margin: 0 -16px;
-            .menu-item {
-                padding: 0 16px;
-                p {
-                    @include font(10.5px, bold, "CircularStd-Bold");
-                    line-height: 13.5px;
-                } 
+        .logo--menu-items {
+            .logo {
+                @include wh(25px, 33px);
+
+                img {
+                    @include wh100;
+                    object-fit: contain;
+                }
+            }
+            .menu-items {
+                margin: 0 -16px 0 16px;
+                .menu-item {
+                    padding: 0 16px;
+                    p {
+                        @include font(10.5px, bold, "CircularStd-Bold");
+                        line-height: 13.5px;
+                    }
+                }
+            }
+        }
+        .connection {
+            .connection-block {
+                // @include wh(97px, 30px);
+                border-radius: 15px;
+                background-color: #f9edff;
+                padding: 3px 4px 0 10px;
+
+                .user-circle {
+                    background-color: #a8a8a8;
+                    @include wh(24px, 24px);
+                    border-radius: 50%;
+
+                    span {
+                        @include wh(15px, 15px);
+
+                        img {
+                            @include wh100;
+                            object-fit: contain;
+                        }
+                    }
+                }
             }
         }
     }
 }
+
+// HEADER-STYLE-END
+
+// SECTION-INFO-START
+
+.info-section-container {
+    max-width: 352px;
+    width: 100%;
+    margin: auto;
+
+    .search-block {
+        max-width: 325px;
+        width: 100%;
+        margin: auto;
+
+        input {
+            width: 100%;
+            border: 1px solid #707070;
+            border-radius: 15px;
+            padding: 8px 34px;
+            ::placeholder {
+                color: #2a2929;
+            }
+        }
+    }
+}
+
+// SECTION-INFO-END

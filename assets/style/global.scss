@@ -1,9 +1,12 @@
 @import './variables.scss';
-
-.container {
-    
-}
+@import './mixins.scss';
 
 .static-color {
     color: $staticColor;
+}
+
+.section-title {
+    @include font(21px, bold, "CircularStd-Bold");
+    color: #2a2929;
+    text-align: center;
 }
