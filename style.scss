@@ -82,3 +82,40 @@ header {
 }
 
 // SECTION-INFO-END
+
+
+// FOOTER-STYLE-START
+
+footer {
+    background-color: #f5f5f5;
+    .footer-container {
+        padding-top: 17px;
+        padding-bottom: 31px;
+        .footer-items {
+            .footer-item {
+                font-size: 10.5px;
+                line-height: 1.43;
+                color: #272727;
+                .footer-item-title {
+                    padding-bottom: 17px;
+                    span {
+                        line-height: 1.43;
+                    }
+                }
+                .footer-menu {
+                    ul {
+                        li {
+                            padding-bottom: 15px;
+                            span {
+
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FOOTER-STYLE-end
