@@ -120,6 +120,7 @@ footer {
         padding-bottom: 31px;
         .footer-items {
             .footer-item {
+                width: calc(100% / 3);
                 font-size: 10.5px;
                 line-height: 1.43;
                 color: #272727;
@@ -127,17 +128,54 @@ footer {
                     padding-bottom: 17px;
                     span {
                         line-height: 1.43;
+                        font-weight: bold;
                     }
                 }
                 .footer-menu {
-                    ul {
-                        li {
+                    .footer-menu-items {
+                        .footer-menu-item {
                             padding-bottom: 15px;
-                            span {
-
+                            a {
+                                color: #272727;
+                                position: relative;
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: -3px;
+                                    width: 0px;
+                                    opacity: 0;
+                                    height: 2px;
+                                    border-radius: 2px;
+                                    background: #272727;
+                                    transition: 0.7s;
+                                }
+                                &:hover::after {
+                                    transition: 0.7s;
+                                    opacity: 1;
+                                    width: 100%;
+                                }
                             }
                         }
 
+                    }
+                }
+                .footer-info {
+                    .footer-copyright {
+                        padding-bottom: 15px;
+                    }
+                    .footer-social {
+                        .footer-language {
+                            span {
+                                border-bottom: 1px solid;
+                            }
+                        }
+                        .footer-icons {
+                            .footer-icon {
+                                padding: 5px;
+                                cursor: pointer;
+                            }    
+                        }
                     }
                 }
             }
