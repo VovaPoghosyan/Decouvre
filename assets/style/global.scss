@@ -25,3 +25,7 @@
     @include font(16px, bold, "CircularStd-Bold");
     color: $mainColor;
 }
+
+.bold {
+    @include font(10px, bold, "CircularStd-Bold")
+}

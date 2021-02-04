@@ -94,23 +94,93 @@ header {
                 text-decoration: underline;
             }
         }
-        .favorite-list {
+        .favorites-list {
             margin: 43px -16px 0 -16px;
             .favorite-block {
                 width: 20%;
                 padding: 0 18px;
                 .favorite-block-inner {
-                    width: 100%;
-                    height: 90px;
+                    @include wh(100%, 90px);
                     background-color: #ffffff;
                     box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
                     border-radius: 6px;
+                    padding: 8px;
+                    position: relative;
+                    .favorite-img {
+                        @include wh(60px, 60px);
+                        position: absolute;
+                        top: -20px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        img {
+                            @include wh100;
+                            object-fit: contain;
+                        }
+                    }
+                    .favorite-name--min {
+                        @include font(10px, normal, "CircularStd");
+                    }
                 }
             }
         }
     }
 }
 // SECTION-FAVORITES-END
+
+// SECTION-PROFESSIONALS-START
+
+.professionals-section {
+    padding-top: 70px;
+
+    .professionals-list {
+        margin: -9px -27px;
+        padding-top: 16px;
+        .professional-block {
+            width: 25%;
+            padding: 9px 27px;
+            .professional-block-inner {
+                padding: 4px 5px;
+                box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+                border-radius: 6px;
+
+                .professional-img {
+                    @include wh(42px, 42px);
+
+                    img {
+                        @include wh100;
+                        object-fit: contain;
+                    }
+                }
+
+                .professional-info {
+                    @include font(7px, bold, "CircularStd-Bold");
+                    padding-left: 8px;
+                    .bold {
+                        font-size: 7px;
+                    }
+                    .procedure {
+                        padding-top: 14px;
+                    }
+                }
+
+                .rating {
+                    @include font(7px, normal, "CircularStd");
+                    .rating-img {
+                        width: 5px;
+                        height: 5px;
+                        display: block;
+
+                        svg {
+                            @include wh100;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// SECTION-PROFESSIONALS-END
 
 // FOOTER-STYLE-START
 footer {
@@ -157,7 +227,6 @@ footer {
                                 }
                             }
                         }
-
                     }
                 }
                 .footer-info {
@@ -174,7 +243,7 @@ footer {
                             .footer-icon {
                                 padding: 5px;
                                 cursor: pointer;
-                            }    
+                            }
                         }
                     }
                 }
