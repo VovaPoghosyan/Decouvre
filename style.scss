@@ -30,10 +30,9 @@ header {
         }
         .connection {
             .connection-block {
-                // @include wh(97px, 30px);
                 border-radius: 15px;
                 background-color: #f9edff;
-                padding: 3px 4px 0 10px;
+                padding: 3px 4px 3px 10px;
                 p {
                     @include font(11px, normal, "CircularStd");
                     padding-right: 4px;
@@ -181,6 +180,92 @@ header {
 }
 
 // SECTION-PROFESSIONALS-END
+
+.share-treatments-section {
+    padding-top: 73px;
+    padding-bottom: 80px;
+
+    .share-treatments-photo--descr {
+        padding-top: 30px;
+
+        .share-treatments-photo-block {
+            position: relative;
+
+            .share-treatments-photo {
+                @include wh(318px, 235px);
+
+                img {
+                    @include wh100;
+                }
+            }
+
+            .name-block {
+                @include wh(92px, 22px);
+                background-color: #ffffff;
+                border-radius: 10px;
+                padding: 2px 2px 2px 11px;
+                position: absolute;
+                top: 17px;
+                left: 17px;
+
+                p {
+                    @include font(10px, normal, "CircularStd");
+                }
+            }
+
+            .image-content {
+                min-width: 62px;
+                height: 27px;
+                background-color: #ffffff;
+                position: absolute;
+                border-radius: 5px;
+                bottom: 6px;
+                padding: 8px 32px;
+                @include font(9px, normal, "CircularStd");
+            }
+
+            .procedure-name {
+                left: 20px;
+                color: $mainColor;
+            }
+
+            .username {
+                right: 20px;
+                color: #a700ff;
+            }
+        }
+
+        .share-treatments-descr {
+            color: $mainColor;
+            @include font(10px, normal, "CircularStd");
+            padding-left: 38px;
+
+            h4 {
+                @include font(10px, bold, "CircularStd-Bold");
+                padding-bottom: 12px;
+            }
+
+            p {
+                padding-bottom: 12px;
+            }
+
+            p.money {
+                padding-top: 18px;
+            }
+
+            .download-brochure {
+                color: #d136ff;
+                @include font(11px, bold, "CircularStd-Bold");
+                @include wh(170px, 30px);
+                box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+                background-color: #fff0ff;
+                border-radius: 50px;
+                text-align: center;
+                margin-top: 40px;
+            }
+        }
+    }
+}
 
 // FOOTER-STYLE-START
 footer {
