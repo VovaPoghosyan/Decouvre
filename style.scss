@@ -181,6 +181,8 @@ header {
 
 // SECTION-PROFESSIONALS-END
 
+// SECTION-SHARE-TREATMENTS-START
+
 .share-treatments-section {
     padding-top: 73px;
     padding-bottom: 80px;
@@ -267,6 +269,43 @@ header {
     }
 }
 
+// SECTION-SHARE-TREATMENTS-END
+
+// SECTION-JOIN-START
+
+.join-section {
+    background-color: #393939;
+    color: #fff;
+    padding: 80px 0;
+    .join-section-container {
+        .section-title {
+            color: #fff;
+        }
+    }
+    .join-list {
+        padding-top: 40px;
+        .join-list-item {
+            width: 29%;
+            .join-list-image {
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+            .join-list-description {
+                padding-top: 10px;
+                span {
+                    font-size: 11px;
+                    line-height: 13px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+// SECTION-JOIN-END
+
 // FOOTER-STYLE-START
 footer {
     background-color: #f5f5f5;
@@ -281,7 +320,7 @@ footer {
                 color: #272727;
                 .footer-item-title {
                     padding-bottom: 17px;
-                    span {
+                    h3 {
                         line-height: 1.43;
                         font-weight: bold;
                     }
