@@ -22,7 +22,7 @@ header {
                 .menu-item {
                     padding: 0 16px;
                     p {
-                        @include font(10.5px, bold, "CircularStd-Bold");
+                        @include font(10px, bold, "CircularStd-Bold");
                         line-height: 13.5px;
                     }
                 }
@@ -34,7 +34,10 @@ header {
                 border-radius: 15px;
                 background-color: #f9edff;
                 padding: 3px 4px 0 10px;
-
+                p {
+                    @include font(11px, normal, "CircularStd");
+                    padding-right: 4px;
+                }
                 .user-circle {
                     background-color: #a8a8a8;
                     @include wh(24px, 24px);
@@ -73,9 +76,7 @@ header {
             border: 1px solid #707070;
             border-radius: 15px;
             padding: 8px 34px;
-            ::placeholder {
-                color: #2a2929;
-            }
+            color: $mainColor;
         }
     }
 }

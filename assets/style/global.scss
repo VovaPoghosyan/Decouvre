@@ -5,8 +5,23 @@
     color: $staticColor;
 }
 
-.section-title {
+.page-title {
     @include font(21px, bold, "CircularStd-Bold");
-    color: #2a2929;
+    color: $mainColor;
     text-align: center;
+    padding-bottom: 11px;
+}
+
+.page-title-descr {
+    padding-top: 14px;
+    p {
+        @include font(10px, normal, "CircularStd");
+        text-align: center;
+        line-height: 1.29;
+    }
+}
+
+.section-title {
+    @include font(16px, bold, "CircularStd-Bold");
+    color: $mainColor;
 }
