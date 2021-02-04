@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAMA,AAAA,aAAa,CAAC;EACV,KAAK,ECPK,OAAO;CDQpB",
     "sources": [
-        "global.scss"
+        "global.scss",
+        "variables.scss"
     ],
     "names": [],
     "file": "global.css"

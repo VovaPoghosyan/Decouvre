@@ -89,7 +89,27 @@
           align-items: center;
 }
 
-header {
-  background-color: red;
+.static-color {
+  color: #d136ff;
+}
+
+header .header-cnt {
+  padding: 32px 0;
+}
+
+header .header-cnt .menu-items {
+  margin: 0 -16px;
+}
+
+header .header-cnt .menu-items .menu-item {
+  padding: 0 16px;
+}
+
+header .header-cnt .menu-items .menu-item p {
+  font-size: 10.5px;
+  font-weight: bold;
+  font-family: "CircularStd-Bold";
+  font-style: normal;
+  line-height: 13.5px;
 }
 /*# sourceMappingURL=style.css.map */
