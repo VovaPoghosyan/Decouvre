@@ -6,7 +6,7 @@
 }
 
 .page-title {
-    @include font(21px, bold, "CircularStd-Bold");
+    @include font(28px, bold, "CircularStd-Bold");
     color: $mainColor;
     text-align: center;
     padding-bottom: 11px;
