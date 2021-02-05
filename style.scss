@@ -94,10 +94,10 @@ header {
             }
         }
         .favorites-list {
-            margin: 43px -16px 0 -16px;
+            margin: 43px -16px -16px -16px;
             .favorite-block {
                 width: 20%;
-                padding: 0 18px;
+                padding: 18px;
                 .favorite-block-inner {
                     @include wh(100%, 90px);
                     background-color: #ffffff;
