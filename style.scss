@@ -103,33 +103,62 @@ header {
                 text-decoration: underline;
             }
         }
-        .favorites-list {
-            margin: 43px -16px -16px -16px;
-            .favorite-block {
-                width: 20%;
-                padding: 18px;
-                .favorite-block-inner {
-                    @include wh(100%, 90px);
-                    background-color: #ffffff;
-                    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
-                    border-radius: 6px;
-                    padding: 8px;
-                    position: relative;
-                    .favorite-img {
-                        @include wh(60px, 60px);
-                        position: absolute;
-                        top: -20px;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        img {
-                            @include wh100;
-                            object-fit: contain;
+        .favorites-list-scrollable {
+            overflow-y: hidden;
+            overflow-x: auto;
+            white-space: nowrap;
+            margin: 24px -21px 0 -21px;
+
+            .favorites-list {
+                ::-webkit-scrollbar {
+                    display: none !important;
+                }
+
+                ::-webkit-scrollbar {
+                    display: none;
+                }
+                .favorite-block {
+                    width: 20%;
+                    padding: 21px;
+                    .favorite-block-inner {
+                        @include wh(100%, 90px);
+                        background-color: #ffffff;
+                        box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+                        border-radius: 6px;
+                        padding: 8px;
+                        position: relative;
+                        .favorite-img {
+                            @include wh(60px, 60px);
+                            position: absolute;
+                            top: -20px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            img {
+                                @include wh100;
+                                object-fit: contain;
+                            }
+                        }
+                        .favorite-name--min {
+                            width: 100%;
+                            @include font(10px, normal, "CircularStd");
                         }
                     }
-                    .favorite-name--min {
-                        width: 100%;
-                        @include font(10px, normal, "CircularStd");
-                    }
+                }
+            }
+
+            .favorites-list:first-child {
+                width: 60%;
+
+                .favorite-block {
+                    width: 33.333%;
+                }
+            }
+
+            .favorites-list:last-child {
+                width: 40%;
+
+                .favorite-block {
+                    width: 50%;
                 }
             }
         }
@@ -141,48 +170,52 @@ header {
 
 .professionals-section {
     padding-top: 70px;
+    .professionals-list-scrollable {
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        .professionals-list {
+            margin: -9px -27px;
+            padding-top: 16px;
+            .professional-block {
+                width: 25%;
+                padding: 9px 27px;
+                .professional-block-inner {
+                    padding: 4px 5px;
+                    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+                    border-radius: 6px;
 
-    .professionals-list {
-        margin: -9px -27px;
-        padding-top: 16px;
-        .professional-block {
-            width: 25%;
-            padding: 9px 27px;
-            .professional-block-inner {
-                padding: 4px 5px;
-                box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
-                border-radius: 6px;
+                    .professional-img {
+                        @include wh(42px, 42px);
 
-                .professional-img {
-                    @include wh(42px, 42px);
-
-                    img {
-                        @include wh100;
-                        object-fit: contain;
-                    }
-                }
-
-                .professional-info {
-                    @include font(7px, bold, "CircularStd-Bold");
-                    padding-left: 8px;
-                    .bold {
-                        font-size: 7px;
-                    }
-                    .procedure {
-                        padding-top: 14px;
-                    }
-                }
-
-                .rating {
-                    @include font(7px, normal, "CircularStd");
-                    .rating-img {
-                        width: 5px;
-                        height: 5px;
-                        display: block;
-                        margin-left: 2px;
-
-                        svg {
+                        img {
                             @include wh100;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .professional-info {
+                        @include font(7px, bold, "CircularStd-Bold");
+                        padding-left: 8px;
+                        .bold {
+                            font-size: 7px;
+                        }
+                        .procedure {
+                            padding-top: 14px;
+                        }
+                    }
+
+                    .rating {
+                        @include font(7px, normal, "CircularStd");
+                        .rating-img {
+                            width: 5px;
+                            height: 5px;
+                            display: block;
+                            margin-left: 2px;
+
+                            svg {
+                                @include wh100;
+                            }
                         }
                     }
                 }
