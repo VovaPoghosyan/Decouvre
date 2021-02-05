@@ -15,9 +15,8 @@
             width: 100% !important;
 
             .favorite-block {
-                width: 33.333% !important;  
+                width: 33.333% !important;
             }
-            
         }
     }
     // SECTION-FAVORITES-RESPONSIVE-STYLE-END
@@ -40,7 +39,13 @@
 
     // SECTION-HEADER-STYLE-START
     header {
-        display: none;
+        .desktop-menu {
+            display: none;
+        }
+
+        .mobile-menu {
+            display: flex;
+        }
     }
     // SECTION-HEADER-STYLE-END
 

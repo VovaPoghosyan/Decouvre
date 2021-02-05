@@ -6,51 +6,73 @@
 // HEADER-STYLE-START
 
 header {
-    .header-container {
-        padding: 32px 0;
-        .logo--menu-items {
-            .logo {
-                @include wh(25px, 33px);
+    .desktop-menu {
+        .header-container {
+            padding: 32px 0;
+            .logo--menu-items {
+                .logo {
+                    @include wh(25px, 33px);
 
-                img {
-                    @include wh100;
-                    object-fit: contain;
+                    img {
+                        @include wh100;
+                        object-fit: contain;
+                    }
+                }
+                .menu-items {
+                    margin: 0 -16px 0 16px;
+                    .menu-item {
+                        padding: 0 16px;
+                        p {
+                            @include font(10px, bold, "CircularStd-Bold");
+                            line-height: 13.5px;
+                        }
+                    }
                 }
             }
-            .menu-items {
-                margin: 0 -16px 0 16px;
-                .menu-item {
-                    padding: 0 16px;
+            .connection {
+                .connection-block {
+                    border-radius: 15px;
+                    background-color: #f9edff;
+                    padding: 3px 4px 3px 10px;
                     p {
-                        @include font(10px, bold, "CircularStd-Bold");
-                        line-height: 13.5px;
+                        @include font(11px, normal, "CircularStd");
+                        padding-right: 4px;
+                    }
+                    .user-circle {
+                        background-color: #a8a8a8;
+                        @include wh(24px, 24px);
+                        border-radius: 50%;
+
+                        span {
+                            @include wh(15px, 15px);
+
+                            img {
+                                @include wh100;
+                                object-fit: contain;
+                            }
+                        }
                     }
                 }
             }
         }
-        .connection {
-            .connection-block {
-                border-radius: 15px;
-                background-color: #f9edff;
-                padding: 3px 4px 3px 10px;
-                p {
-                    @include font(11px, normal, "CircularStd");
-                    padding-right: 4px;
-                }
-                .user-circle {
-                    background-color: #a8a8a8;
-                    @include wh(24px, 24px);
-                    border-radius: 50%;
+    }
 
-                    span {
-                        @include wh(15px, 15px);
+    .mobile-menu {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #ffffff;
+        z-index: 1;
+        padding: 9px 0;
 
-                        img {
-                            @include wh100;
-                            object-fit: contain;
-                        }
-                    }
-                }
+        .mobile-menu-item-block {
+            img {
+                @include wh(20px, 20px);
+            }
+            i {
+                padding-top: 5px;
+                @include font(12px, normal, "CircularStd")
             }
         }
     }
