@@ -1,17 +1,7 @@
 @import "./assets/style/mixins.scss";
 
-@media (max-width: 1199.98px) {
-}
-
-@media (max-width: 959.98px) {
-}
-
-@media (max-width: 766.98px) {
-}
-
 @media (max-width: 576.98px) {
     // global-styles-start
-
     .page-title {
         @include font(9px, bold, "CircularStd-Bold");
     }
@@ -23,9 +13,9 @@
     section {
         padding-top: 32px !important;
     }
-
     // global-styles-end
 
+    // SECTION-HEADER-STYLE-START
     header .header-container {
         padding: 32px 0 0 0;
         .logo--menu-items .menu-items {
@@ -36,32 +26,36 @@
             }
         }
     }
+    // SECTION-HEADER-STYLE-END
     // SECTION-INFO-RESPONSIVE-STYLE-START
-
     .info-section-container {
         max-width: 100%;
     }
-
     // SECTION-INFO-RESPONSIVE-STYLE-END
 
     // SECTION-FAVORITES-RESPONSIVE-STYLE-START
-
     .title--see-all {
         flex-direction: column;
     }
 
-    .favorites-section .favorites-section-container .favorites-list .favorite-block {
-        width: 50%;
-    }
+    .favorites-section .favorites-section-container .favorites-list {
+        margin: 26px -14px -14px -14px;
+        .favorite-block {
+            width: 50%;
+            padding: 14px;
+        }
+    } 
     // SECTION-FAVORITES-RESPONSIVE-STYLE-END
     // SECTION-PROFESSIONALS-RESPONSIVE-STYLE-START
-    .professionals-section .professionals-list .professional-block {
-        width: 50%;
+    .professionals-section .professionals-list {
+        margin: -10px;
+        .professional-block {
+            width: 50%;
+            padding: 10px;
+        }
     }
     // SECTION-PROFESSIONALS-RESPONSIVE-STYLE-END
-
     // SECTION-SHARE-TREATMENTS-RESPONSIVE-STYLE-START
-
     .share-treatments-section {
         padding-bottom: 24px;
         .share-treatments-photo--descr {
