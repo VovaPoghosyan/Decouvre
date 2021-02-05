@@ -169,6 +169,7 @@ header {
                         width: 5px;
                         height: 5px;
                         display: block;
+                        margin-left: 2px;
 
                         svg {
                             @include wh100;
