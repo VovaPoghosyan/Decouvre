@@ -69,12 +69,22 @@ header {
         max-width: 325px;
         width: 100%;
         margin: auto;
+        position: relative;
+
+        .search-icon {
+            img {
+                width: 10px;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+        }
 
         input {
             width: 100%;
             border: 1px solid #707070;
             border-radius: 15px;
-            padding: 8px 34px;
+            padding: 6px 22px;
             color: $mainColor;
         }
     }
